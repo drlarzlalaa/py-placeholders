@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "placeholders"
+version = "0.1.0"
+description = "Find template placeholders in emails and text before you send: unfilled merge tags, missing data fields, unbalanced template blocks, in every common syntax"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "drlarzlalaa" }]
+keywords = ["email", "template", "placeholder", "merge tags", "newsletter"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Communications :: Email",
+]
+dependencies = []
+
+[project.scripts]
+placeholders = "placeholders.__main__:main"
+
+[tool.setuptools]
+packages = ["placeholders"]
