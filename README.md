@@ -13,6 +13,7 @@ $ python -m placeholders template.html --data data.json
   %(name)s               %(order_id)s                 line 2
   {name}                 {0}                          line 2
   {{ }}                  {{ First_Name }}             line 3
+  {{ }}                  {{ item.name }}              line 4
   *| |* (Mailchimp)      *|UNSUB|*                    line 6
   %s / %d                %s                           line 6
 info  [unused] the data field 'unused_field' is never used in the text
